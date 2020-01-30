@@ -1,0 +1,45 @@
+<h1>Upload a bookmark</h1>
+<div class="container my-5">
+  <div class="card">
+    <div class="card-body">
+      <div class="col-md-10">
+        <form (submit)="onSubmit()">
+          <input type="hidden" name="id"/>
+          <div class="row">
+            <div class="form-group col-md-8">
+              <label for="title" class="col-form-label">Title</label>
+              <input type="text" class="form-control" [(ngModel)]="title" name="title"
+                     id="title" placeholder="Title" />
+            </div>
+            <div class="form-group col-md-8">
+              <label for="url" class="col-form-label">URL</label>
+              <input type="text" class="form-control" [(ngModel)]="url" name="url"
+                     id="url" placeholder="URL" />
+            </div>
+            <div class="form-group col-md-8">
+              <label for="description" class="col-form-label">Description</label>
+              <input type="text"  class="form-control" [(ngModel)]="description" name="description"
+                     id="description" placeholder="Description" />
+            </div>
+            <div class="form-group col-md-8">
+              <label for="date_added" class="col-form-label">Date added</label>
+              <input type="text"  class="form-control" [(ngModel)]="dateAdded" name="dateAdded"
+                     id="date_added" placeholder="Date added" />
+            </div>
+
+            <div class="form-group col-md-8">
+              <label for="date_modified" class="col-form-label">Date Modified</label>
+              <input type="text"  class="form-control" [(ngModel)]="dateModified" name="dateModified"
+                     id="date_modified" placeholder="Date Modified" />
+            </div>
+            <div class="col-md-6">
+              <input type="submit" class="btn btn-primary" value=" Upload ">
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
